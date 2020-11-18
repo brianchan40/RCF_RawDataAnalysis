@@ -1,5 +1,5 @@
 #data files
-*/*/*.root
+**/*.root
 
 #auto gen log files
 */*.session.xml
