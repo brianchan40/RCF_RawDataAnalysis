@@ -1,2 +1,7 @@
 #data files
 ./*/*/*.root
+
+#auto gen log files
+./*/*.session.xml
+./*/*.dataset*
+./*/schedTemplateExp.xml
