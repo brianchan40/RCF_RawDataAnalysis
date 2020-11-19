@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<job  maxFilesPerProcess="20" simulateSubmission="false" fileListSyntax="xrootd">
+    
+    <command>
+        ./run_gamma.csh &cent; &opt_weight; $FILELIST $JOBID
+        
+    </command>
+    
+    <SandBox installer="ZIP">
+        <Package name="pla_&cent;_&lam;_&lum;">
+            <File>file:/star/u/brian40/PicoDst/PicoDst_NoMaker/Gamma112/run_gamma.csh</File>
+            <File>file:/star/u/brian40/PicoDst/PicoDst_NoMaker/Gamma112/namespaces/</File>
+	    <!--<File>file:/star/u/brian40/PicoDst/PicoDst_NoMaker/Gamma112/output/</File>-->
+            <File>file:/star/u/brian40/PicoDst/PicoDst_NoMaker/Gamma112/RunGammaAnalyzer.C</File>
+            <File>file:/star/u/brian40/PicoDst/PicoDst_NoMaker/Gamma112/Gamma_112_module.C</File>
+            <File>file:/star/u/brian40/PicoDst/PicoDst_NoMaker/Gamma112/Gamma_112_module.h</File>
+            <File>file:/star/u/brian40/PicoDst/PicoDst_NoMaker/Version2/StRoot/</File>
+            <File>file:/star/u/brian40/PicoDst/PicoDst_NoMaker/Version2/structs.h</File>
+            <File>file:/star/u/brian40/PicoDst/PicoDst_NoMaker/Gamma112/Results_&lam;_18/cen&cent;.weight_112_module.root</File>
+        </Package>
+    </SandBox>
+    
+    
+    <Generator>
+        <Location>./condor_files/</Location>
+    </Generator>
+    
+    <input URL="file:/star/u/brian40/PicoDst/PicoDst_NoMaker/Version2/Results_&lam;_18/*_tree.root"/>
+    <output fromScratch="*.root" toURL="file:/star/u/brian40/PicoDst/PicoDst_NoMaker/Gamma112/output/&lam;/Gamma112_&cent;/" />
+    
+    <stdout URL="file:/star/u/brian40/PicoDst/PicoDst_NoMaker/Gamma112/output/&lam;/Gamma112_&cent;_debug/$JOBID.out"/>
+    <stderr URL="file:/star/u/brian40/PicoDst/PicoDst_NoMaker/Gamma112/output/&lam;/Gamma112_&cent;_debug/$JOBID.err"/>
+</job>
