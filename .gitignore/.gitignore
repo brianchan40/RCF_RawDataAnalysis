@@ -7,10 +7,10 @@
 */schedTemplateExp.xml
 
 #temp organization files for Gamma112
-Gamma112/temp/*
-Gamma112/temp2/*
-Gamma112/temp3/*
-Gamma112/output/*
-Gamma112/condor_files/*
-Gamma112/pla*
+Gamma112/temp/
+Gamma112/temp2/
+Gamma112/temp3/
+Gamma112/output/
+Gamma112/condor_files/
+Gamma112/pla*/
 Gamma112/Sample/*
