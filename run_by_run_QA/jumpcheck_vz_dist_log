@@ -1,0 +1,220 @@
+[33m WARNING: (Argument 3) No BADRUNLIST supplied, will not reject the badruns in jumpcheck 
+[39m [34m We found 28 jump for vz_dist with the NSIGMA=6 from Runid = 78 to Runid = 38040 [39m 
+78 #FirstRun 
+1014
+1039
+1052
+2008
+2032
+2063
+2075
+3009
+3033
+4005
+5005
+7037
+9044
+10046
+11048
+12054
+17010
+18007
+20001
+27007
+29008
+31053
+32037
+33039
+35009
+37027
+37046
+38033
+38040 #LastRun
+[34m We found 8 badruns for vz_dist in round0 from Runid = 78 to Runid = 38039 with NSIGMA = 10[39m 
+28003 #vz_dist_badruns 10SIGMA
+28009 #vz_dist_badruns 10SIGMA
+28010 #vz_dist_badruns 10SIGMA
+28011 #vz_dist_badruns 10SIGMA
+28013 #vz_dist_badruns 10SIGMA
+28014 #vz_dist_badruns 10SIGMA
+28015 #vz_dist_badruns 10SIGMA
+28017 #vz_dist_badruns 10SIGMA
+[34m We found 29 jump for vz_dist with the NSIGMA=6 from Runid = 78 to Runid = 38040 [39m 
+78 #FirstRun 
+1014
+1039
+1052
+2008
+2032
+2063
+2075
+3009
+3033
+4005
+5005
+7037
+9044
+10047
+11048
+12054
+17010
+18007
+20009
+27003
+29014
+30014
+31053
+32037
+33039
+35009
+37027
+37046
+38033
+38040 #LastRun
+[33m Will use the given data recheck_region_1.dat to run the jumpcheck
+[39m [34m We found 1 jump for vz_dist with the NSIGMA=6 from Runid = 78 to Runid = 1014 [39m 
+78 #FirstRun 
+1010
+1014 #LastRun
+[33m Will use the given data recheck_region_2.dat to run the jumpcheck
+[39m [34m We found no jump for vz_dist with the NSIGMA=6 from Runid = 1014 to Runid = 1039 [39m 
+[33m Will use the given data recheck_region_3.dat to run the jumpcheck
+[39m [34m We found no jump for vz_dist with the NSIGMA=6 from Runid = 1039 to Runid = 1052 [39m 
+[33m Will use the given data recheck_region_4.dat to run the jumpcheck
+[39m [34m We found no jump for vz_dist with the NSIGMA=6 from Runid = 1052 to Runid = 2008 [39m 
+[33m Will use the given data recheck_region_5.dat to run the jumpcheck
+[39m [34m We found 1 jump for vz_dist with the NSIGMA=6 from Runid = 2008 to Runid = 2032 [39m 
+2008 #FirstRun 
+2020
+2032 #LastRun
+[33m Will use the given data recheck_region_6.dat to run the jumpcheck
+[39m [34m We found no jump for vz_dist with the NSIGMA=6 from Runid = 2032 to Runid = 2063 [39m 
+[33m Will use the given data recheck_region_7.dat to run the jumpcheck
+[39m [34m We found no jump for vz_dist with the NSIGMA=6 from Runid = 2063 to Runid = 2075 [39m 
+[33m Will use the given data recheck_region_8.dat to run the jumpcheck
+[39m [34m We found no jump for vz_dist with the NSIGMA=6 from Runid = 2075 to Runid = 3009 [39m 
+[33m Will use the given data recheck_region_9.dat to run the jumpcheck
+[39m [34m We found no jump for vz_dist with the NSIGMA=6 from Runid = 3009 to Runid = 3033 [39m 
+[33m Will use the given data recheck_region_10.dat to run the jumpcheck
+[39m [34m We found 1 jump for vz_dist with the NSIGMA=6 from Runid = 3033 to Runid = 4005 [39m 
+3033 #FirstRun 
+3045
+4005 #LastRun
+[33m Will use the given data recheck_region_11.dat to run the jumpcheck
+[39m [34m We found 1 jump for vz_dist with the NSIGMA=6 from Runid = 4005 to Runid = 5005 [39m 
+4005 #FirstRun 
+4045
+5005 #LastRun
+[33m Will use the given data recheck_region_12.dat to run the jumpcheck
+[39m [34m We found 3 jump for vz_dist with the NSIGMA=6 from Runid = 5005 to Runid = 7037 [39m 
+5005 #FirstRun 
+6018
+7011
+7023
+7037 #LastRun
+[33m Will use the given data recheck_region_13.dat to run the jumpcheck
+[39m [34m We found 1 jump for vz_dist with the NSIGMA=6 from Runid = 7037 to Runid = 9044 [39m 
+7037 #FirstRun 
+8006
+9044 #LastRun
+[33m Will use the given data recheck_region_14.dat to run the jumpcheck
+[39m [34m We found 4 jump for vz_dist with the NSIGMA=6 from Runid = 9044 to Runid = 10047 [39m 
+9044 #FirstRun 
+9072
+10007
+10014
+10037
+10047 #LastRun
+[33m Will use the given data recheck_region_15.dat to run the jumpcheck
+[39m [34m We found 2 jump for vz_dist with the NSIGMA=6 from Runid = 10047 to Runid = 11048 [39m 
+10047 #FirstRun 
+
+11029
+11048 #LastRun
+[33m Will use the given data recheck_region_16.dat to run the jumpcheck
+[39m [34m We found 2 jump for vz_dist with the NSIGMA=6 from Runid = 11048 to Runid = 12054 [39m 
+11048 #FirstRun 
+12014
+12021
+12054 #LastRun
+[33m Will use the given data recheck_region_17.dat to run the jumpcheck
+[39m [34m We found 4 jump for vz_dist with the NSIGMA=6 from Runid = 12054 to Runid = 17010 [39m 
+12054 #FirstRun 
+
+14038
+15019
+15043
+17010 #LastRun
+[33m Will use the given data recheck_region_18.dat to run the jumpcheck
+[39m [34m We found 1 jump for vz_dist with the NSIGMA=6 from Runid = 17010 to Runid = 18007 [39m 
+17010 #FirstRun 
+17025
+18007 #LastRun
+[33m Will use the given data recheck_region_19.dat to run the jumpcheck
+[39m [34m We found 3 jump for vz_dist with the NSIGMA=6 from Runid = 18007 to Runid = 20009 [39m 
+18007 #FirstRun 
+18023
+19013
+19032
+20009 #LastRun
+[33m Will use the given data recheck_region_20.dat to run the jumpcheck
+[39m [34m We found 2 jump for vz_dist with the NSIGMA=6 from Runid = 20009 to Runid = 27003 [39m 
+20009 #FirstRun 
+26004
+26032
+27003 #LastRun
+[33m Will use the given data recheck_region_21.dat to run the jumpcheck
+[39m [34m We found 1 jump for vz_dist with the NSIGMA=6 from Runid = 27003 to Runid = 29014 [39m 
+27003 #FirstRun 
+27018
+29014 #LastRun
+[33m Will use the given data recheck_region_22.dat to run the jumpcheck
+[39m [34m We found no jump for vz_dist with the NSIGMA=6 from Runid = 29014 to Runid = 30014 [39m 
+[33m Will use the given data recheck_region_23.dat to run the jumpcheck
+[39m [34m We found 1 jump for vz_dist with the NSIGMA=6 from Runid = 30014 to Runid = 31053 [39m 
+30014 #FirstRun 
+31048
+31053 #LastRun
+[33m Will use the given data recheck_region_24.dat to run the jumpcheck
+[39m [34m We found 2 jump for vz_dist with the NSIGMA=6 from Runid = 31053 to Runid = 32037 [39m 
+31053 #FirstRun 
+32008
+32030
+32037 #LastRun
+[33m Will use the given data recheck_region_25.dat to run the jumpcheck
+[39m [34m We found no jump for vz_dist with the NSIGMA=6 from Runid = 32037 to Runid = 33039 [39m 
+[33m Will use the given data recheck_region_26.dat to run the jumpcheck
+[39m [34m We found 1 jump for vz_dist with the NSIGMA=6 from Runid = 33039 to Runid = 35009 [39m 
+33039 #FirstRun 
+34014
+35009 #LastRun
+[33m Will use the given data recheck_region_27.dat to run the jumpcheck
+[39m [34m We found 3 jump for vz_dist with the NSIGMA=6 from Runid = 35009 to Runid = 37027 [39m 
+35009 #FirstRun 
+35027
+36007
+37007
+37027 #LastRun
+[33m Will use the given data recheck_region_28.dat to run the jumpcheck
+[39m [34m We found 1 jump for vz_dist with the NSIGMA=6 from Runid = 37027 to Runid = 37046 [39m 
+37027 #FirstRun 
+37034
+37046 #LastRun
+[33m Will use the given data recheck_region_29.dat to run the jumpcheck
+[39m [34m We found no jump for vz_dist with the NSIGMA=6 from Runid = 37046 to Runid = 38033 [39m 
+[33m Will use the given data recheck_region_30.dat to run the jumpcheck
+[39m [34m We found no jump for vz_dist with the NSIGMA=6 from Runid = 38033 to Runid = 38040 [39m 
+[33m WARNING: (Argument 5) This is not the first round, but No BADRUNSLIST supplied. 
+[39m [34m We found 12 badruns for vz_dist in round1 from Runid = 78 to Runid = 38039 with NSIGMA = 5[39m 
+2063 #vz_dist_badruns 5SIGMA
+7050 #vz_dist_badruns 5SIGMA
+7051 #vz_dist_badruns 5SIGMA
+28003 #vz_dist_badruns 5SIGMA
+28009 #vz_dist_badruns 5SIGMA
+28010 #vz_dist_badruns 5SIGMA
+28011 #vz_dist_badruns 5SIGMA
+28013 #vz_dist_badruns 5SIGMA
+28014 #vz_dist_badruns 5SIGMA
+28015 #vz_dist_badruns 5SIGMA
+28017 #vz_dist_badruns 5SIGMA
+28018 #vz_dist_badruns 5SIGMA

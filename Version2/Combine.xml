@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<job  maxFilesPerProcess="5" simulateSubmission="false" fileListSyntax="xrootd">
+    
+    <command>
+        cd /star/u/brian40/PicoDst/PicoDst_NoMaker/Version2/
+        ./while_loop.sh &daynum; &max; &first; &endnum; &cent;
+        
+    </command>
+    
+    <SandBox installer="ZIP">
+        <Package name="plac_&daynum;_&cent;_&first;_&endnum;">
+            <File>file:/star/u/brian40/PicoDst/PicoDst_NoMaker/Version2/while_loop.sh</File>
+        </Package>
+    </SandBox>
+    
+    
+    <Generator>
+        <Location>./condor_files_combine/</Location>
+    </Generator>
+    
+    <stdout URL="file:/star/u/brian40/PicoDst/PicoDst_NoMaker/Version2/output/combine/Data_&daynum;_&cent;_debug/$JOBID.out"/>
+    <stderr URL="file:/star/u/brian40/PicoDst/PicoDst_NoMaker/Version2/output/combine/Data_&daynum;_&cent;_debug/$JOBID.err"/>
+</job>

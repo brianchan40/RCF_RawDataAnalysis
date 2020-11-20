@@ -1,0 +1,53 @@
+#data files
+**/*.root
+
+#auto gen log files
+*/*.session.xml
+*/*.dataset*
+*/schedTemplateExp.xml
+
+#top level lib
+.sl73_gcc485/
+
+#temp organization files for Gamma112
+Gamma112/temp
+Gamma112/temp2
+Gamma112/temp3
+Gamma112/output
+Gamma112/condor_files
+Gamma112/pla*
+Gamma112/Sample
+Gamma112/less
+Gamma112/Results*
+Gamma112/Makefile_old
+
+#temp organization files for Version2
+Version2/*.d
+Version2/*.so
+Version2/condor_files
+Version2/condor_files_combine
+Version2/output
+Version2/Results*
+Version2/Sample
+Version2/temp
+Version2/.sl73_gcc485
+
+#temp organization files for AMPT
+AMPT/condor_files
+AMPT/*.d
+AMPT/*.so
+AMPT/Makefile_old
+AMPT/output
+AMPT/Results_*
+AMPT/Sample
+AMPT/temp
+AMPT/temp2
+AMPT/temp3
+
+CheckParam
+
+old_version
+
+phi_15GeV
+
+v2

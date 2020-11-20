@@ -1,0 +1,9 @@
+1	vz_dist
+2	vxy_dist
+3	refmult_dist
+4	mean_pt
+5	mean_eta
+6	mean_phi
+7	mean_dca
+8	mean_nHitsFit
+9	mean_nHitsDedx
