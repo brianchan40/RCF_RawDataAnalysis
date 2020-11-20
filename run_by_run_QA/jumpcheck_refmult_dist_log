@@ -1,0 +1,95 @@
+[33m Will use the given data recheck_region_1.dat to run the jumpcheck
+[39m [34m We found no jump for refmult_dist with the NSIGMA=64 from Runid = 78 to Runid = 1010 [39m 
+[33m Will use the given data recheck_region_3.dat to run the jumpcheck
+[39m [34m We found no jump for refmult_dist with the NSIGMA=64 from Runid = 1014 to Runid = 1039 [39m 
+[33m Will use the given data recheck_region_4.dat to run the jumpcheck
+[39m [34m We found no jump for refmult_dist with the NSIGMA=64 from Runid = 1039 to Runid = 1052 [39m 
+[33m Will use the given data recheck_region_5.dat to run the jumpcheck
+[39m [34m We found no jump for refmult_dist with the NSIGMA=64 from Runid = 1052 to Runid = 2008 [39m 
+[33m Will use the given data recheck_region_8.dat to run the jumpcheck
+[39m [34m We found no jump for refmult_dist with the NSIGMA=64 from Runid = 2032 to Runid = 2048 [39m 
+[33m Will use the given data recheck_region_10.dat to run the jumpcheck
+[39m [34m We found no jump for refmult_dist with the NSIGMA=64 from Runid = 2075 to Runid = 3009 [39m 
+[33m Will use the given data recheck_region_11.dat to run the jumpcheck
+[39m [34m We found no jump for refmult_dist with the NSIGMA=64 from Runid = 3009 to Runid = 3033 [39m 
+[33m Will use the given data recheck_region_13.dat to run the jumpcheck
+[39m [34m We found no jump for refmult_dist with the NSIGMA=64 from Runid = 3045 to Runid = 4005 [39m 
+[33m Will use the given data recheck_region_14.dat to run the jumpcheck
+[39m [34m We found no jump for refmult_dist with the NSIGMA=64 from Runid = 4005 to Runid = 4045 [39m 
+[33m Will use the given data recheck_region_16.dat to run the jumpcheck
+[39m [34m We found 1 jump for refmult_dist with the NSIGMA=64 from Runid = 5005 to Runid = 6018 [39m 
+5005 #FirstRun 
+5042
+6018 #LastRun
+[33m Will use the given data recheck_region_17.dat to run the jumpcheck
+[39m [34m We found no jump for refmult_dist with the NSIGMA=64 from Runid = 6018 to Runid = 7011 [39m 
+[33m Will use the given data recheck_region_20.dat to run the jumpcheck
+[39m [34m We found no jump for refmult_dist with the NSIGMA=64 from Runid = 7037 to Runid = 8006 [39m 
+[33m Will use the given data recheck_region_21.dat to run the jumpcheck
+[39m [34m We found 2 jump for refmult_dist with the NSIGMA=64 from Runid = 8006 to Runid = 9044 [39m 
+8006 #FirstRun 
+8011
+9027
+9044 #LastRun
+[33m Will use the given data recheck_region_22.dat to run the jumpcheck
+[39m [34m We found no jump for refmult_dist with the NSIGMA=64 from Runid = 9044 to Runid = 9072 [39m 
+[33m Will use the given data recheck_region_25.dat to run the jumpcheck
+[39m [34m We found no jump for refmult_dist with the NSIGMA=64 from Runid = 10014 to Runid = 10037 [39m 
+[33m Will use the given data recheck_region_27.dat to run the jumpcheck
+[39m [34m We found no jump for refmult_dist with the NSIGMA=64 from Runid = 10047 to Runid = 11029 [39m 
+[33m Will use the given data recheck_region_29.dat to run the jumpcheck
+[39m [34m We found no jump for refmult_dist with the NSIGMA=64 from Runid = 11048 to Runid = 12014 [39m 
+[33m Will use the given data recheck_region_31.dat to run the jumpcheck
+[39m [34m We found no jump for refmult_dist with the NSIGMA=64 from Runid = 12021 to Runid = 12054 [39m 
+[33m Will use the given data recheck_region_32.dat to run the jumpcheck
+[39m [34m We found no jump for refmult_dist with the NSIGMA=64 from Runid = 12054 to Runid = 14038 [39m 
+[33m Will use the given data recheck_region_33.dat to run the jumpcheck
+[39m [34m We found no jump for refmult_dist with the NSIGMA=64 from Runid = 14038 to Runid = 15019 [39m 
+[33m Will use the given data recheck_region_34.dat to run the jumpcheck
+[39m [34m We found no jump for refmult_dist with the NSIGMA=64 from Runid = 15019 to Runid = 15043 [39m 
+[33m Will use the given data recheck_region_35.dat to run the jumpcheck
+[39m [34m We found no jump for refmult_dist with the NSIGMA=64 from Runid = 15043 to Runid = 17010 [39m 
+[33m Will use the given data recheck_region_37.dat to run the jumpcheck
+[39m [34m We found no jump for refmult_dist with the NSIGMA=64 from Runid = 17025 to Runid = 18007 [39m 
+[33m Will use the given data recheck_region_38.dat to run the jumpcheck
+[39m [34m We found no jump for refmult_dist with the NSIGMA=64 from Runid = 18007 to Runid = 18023 [39m 
+[33m Will use the given data recheck_region_39.dat to run the jumpcheck
+[39m [34m We found no jump for refmult_dist with the NSIGMA=64 from Runid = 18023 to Runid = 19013 [39m 
+[33m Will use the given data recheck_region_40.dat to run the jumpcheck
+[39m [34m We found no jump for refmult_dist with the NSIGMA=64 from Runid = 19013 to Runid = 19032 [39m 
+[33m Will use the given data recheck_region_41.dat to run the jumpcheck
+[39m [34m We found no jump for refmult_dist with the NSIGMA=64 from Runid = 19032 to Runid = 20009 [39m 
+[33m Will use the given data recheck_region_42.dat to run the jumpcheck
+[39m [34m We found no jump for refmult_dist with the NSIGMA=64 from Runid = 20009 to Runid = 26004 [39m 
+[33m Will use the given data recheck_region_43.dat to run the jumpcheck
+[39m [34m We found no jump for refmult_dist with the NSIGMA=64 from Runid = 26004 to Runid = 26032 [39m 
+[33m Will use the given data recheck_region_44.dat to run the jumpcheck
+[39m [34m We found no jump for refmult_dist with the NSIGMA=64 from Runid = 26032 to Runid = 27003 [39m 
+[33m Will use the given data recheck_region_45.dat to run the jumpcheck
+[39m [34m We found no jump for refmult_dist with the NSIGMA=64 from Runid = 27003 to Runid = 27018 [39m 
+[33m Will use the given data recheck_region_46.dat to run the jumpcheck
+[39m [34m We found no jump for refmult_dist with the NSIGMA=64 from Runid = 27018 to Runid = 29014 [39m 
+[33m Will use the given data recheck_region_47.dat to run the jumpcheck
+[39m [34m We found no jump for refmult_dist with the NSIGMA=64 from Runid = 29014 to Runid = 30014 [39m 
+[33m Will use the given data recheck_region_48.dat to run the jumpcheck
+[39m [34m We found no jump for refmult_dist with the NSIGMA=64 from Runid = 30014 to Runid = 31048 [39m 
+[33m Will use the given data recheck_region_51.dat to run the jumpcheck
+[39m [34m We found no jump for refmult_dist with the NSIGMA=64 from Runid = 32008 to Runid = 32030 [39m 
+[33m Will use the given data recheck_region_53.dat to run the jumpcheck
+[39m [34m We found no jump for refmult_dist with the NSIGMA=64 from Runid = 32037 to Runid = 33039 [39m 
+[33m Will use the given data recheck_region_54.dat to run the jumpcheck
+[39m [34m We found no jump for refmult_dist with the NSIGMA=64 from Runid = 33039 to Runid = 34014 [39m 
+[33m Will use the given data recheck_region_55.dat to run the jumpcheck
+[39m [34m We found no jump for refmult_dist with the NSIGMA=64 from Runid = 34014 to Runid = 35009 [39m 
+[33m Will use the given data recheck_region_56.dat to run the jumpcheck
+[39m [34m We found no jump for refmult_dist with the NSIGMA=64 from Runid = 35009 to Runid = 35027 [39m 
+[33m Will use the given data recheck_region_58.dat to run the jumpcheck
+[39m [34m We found no jump for refmult_dist with the NSIGMA=64 from Runid = 36007 to Runid = 37007 [39m 
+[33m Will use the given data recheck_region_59.dat to run the jumpcheck
+[39m [34m We found no jump for refmult_dist with the NSIGMA=64 from Runid = 37007 to Runid = 37027 [39m 
+[33m WARNING: (Argument 5) This is not the first round, but No BADRUNSLIST supplied. 
+[39m [34m We found 4 badruns for refmult_dist in round1 from Runid = 78 to Runid = 38039 with NSIGMA = 5[39m 
+3018 #refmult_dist_badruns 5SIGMA
+17008 #refmult_dist_badruns 5SIGMA
+17009 #refmult_dist_badruns 5SIGMA
+32002 #refmult_dist_badruns 5SIGMA

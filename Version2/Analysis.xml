@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<job  maxFilesPerProcess="5" simulateSubmission="false" fileListSyntax="xrootd">
+    
+    <command>
+        starver SL19b
+	./runv0.csh &cent; &opt_weight; $FILELIST $JOBID
+        
+    </command>
+    
+    <SandBox installer="ZIP">
+        <Package name="pla_&daynum;_&cent;_&lam;_&lum;">
+            <File>file:/star/u/brian40/PicoDst/PicoDst_NoMaker/Version2/runv0.csh</File>
+            <File>file:/star/u/brian40/PicoDst/PicoDst_NoMaker/Version2/RunReadAnalyzer.C</File>
+            <File>file:/star/u/brian40/PicoDst/PicoDst_NoMaker/Version2/ParticleMaker.C</File>
+            <File>file:/star/u/brian40/PicoDst/PicoDst_NoMaker/Version2/StRoot/</File>
+            <File>file:/star/u/brian40/PicoDst/PicoDst_NoMaker/Version2/structs.h</File>
+            <File>file:/star/u/brian40/PicoDst/PicoDst_NoMaker/Version2/namespaces/</File>
+            <!--<File>file:/star/u/brian40/PicoDst/PicoDst_NoMaker/Version2/Gamma_112_module.C</File>
+            <File>file:/star/u/brian40/PicoDst/PicoDst_NoMaker/Version2/Gamma_112_module.h</File>-->
+            <File>file:/star/u/brian40/PicoDst/PicoDst_NoMaker/Version2/.sl73_gcc485/</File>
+        </Package>
+    </SandBox>
+    
+    
+    <Generator>
+        <Location>./condor_files/</Location>
+        <ScriptLocation>./condor_files/scripts</ScriptLocation>
+    </Generator>
+    
+    <!--<input URL="catalog:star.bnl.gov?storage!=hpss,production=P16id,trgsetupname~AuAu_200_production_low_2014,filetype=daq_reco_picoDst,filename~st_physics_15&daynum;" nFiles="all"/>-->
+    <input URL="catalog:star.bnl.gov?production=P19ib,filetype=daq_reco_picoDst,trgsetupname~27GeV_production_2018,sanity=1,tpx=1,storage!=hpss,filename~st_physics" nFiles="all"/>
+    <!--<input URL="file:/star/data100/reco/AuAu200_production_2011/FullField/P11id.P18if/2011/&daynum;/*/st_physics_1*" />-->
+    <output fromScratch="*.root" toURL="file:/star/u/brian40/PicoDst/PicoDst_NoMaker/Version2/output/&lam;_&lum;/Data_&daynum;_&cent;/" />
+    
+    <stdout URL="file:/star/u/brian40/PicoDst/PicoDst_NoMaker/Version2/output/&lam;_&lum;/Data_&daynum;_&cent;_debug/$JOBID.out"/>
+    <stderr URL="file:/star/u/brian40/PicoDst/PicoDst_NoMaker/Version2/output/&lam;_&lum;/Data_&daynum;_&cent;_debug/$JOBID.err"/>
+</job>

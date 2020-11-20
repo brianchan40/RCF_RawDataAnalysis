@@ -4,7 +4,7 @@ CENTRALITIES = 4
 #PERIOD_4 = 1 2 3 4 5 6 7 8
 PERIOD_4 = 1
 #LAMBDA = lamrot
-LAMBDA = antilam
+LAMBDA = lamrot
 #LUM = high mid low nor
 LUM = low
 

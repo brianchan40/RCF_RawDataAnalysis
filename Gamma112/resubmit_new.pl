@@ -10,7 +10,7 @@ my $resubmit = "resub.sh";
 );
 
 @outputDirs = (
-"/star/u/brian40/PicoDst/PicoDst_NoMaker/Gamma112/output/antilam/Gamma112_"
+"/star/u/brian40/PicoDst/PicoDst_NoMaker/Gamma112/output/lamrot/Gamma112_"
 );
 
 @flowCents = (

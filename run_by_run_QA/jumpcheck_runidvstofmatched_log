@@ -1,0 +1,7 @@
+[33m WARNING: (Argument 3) No BADRUNLIST supplied, will not reject the badruns in jumpcheck 
+[39m [33m WARNING: (Argument 4) No NSIGMA supplied, will try to use the default NSIGMA=5 
+[39m [34m We found no jump for runidvstofmatched with the NSIGMA=5 from Runid =  to Runid = , will exit [39m 
+[34m We found 0 badruns for runidvstofmatched in round0 from Runid =  to Runid =  with NSIGMA = 10[39m 
+[33m WARNING: (Argument 3) No BADRUNLIST supplied, will not reject the badruns in jumpcheck 
+[39m [33m WARNING: (Argument 4) No NSIGMA supplied, will try to use the default NSIGMA=5 
+[39m [34m We found no jump for runidvstofmatched with the NSIGMA=5 from Runid =  to Runid = , will exit [39m 

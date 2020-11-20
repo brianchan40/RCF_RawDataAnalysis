@@ -265,7 +265,7 @@ void Gamma_112_module(int cen = 1, int opt_weight = 1, const Char_t *inFile = ".
             Eta   = gv_gamma::trk_mom->Eta();
             Pt    = gv_gamma::trk_mom->Pt();
             Charge = particle1->at(trki).Charge; //1 for lambda, -1 for antilambdas
-            cout << "Lambda charge = " << Charge << endl;
+            // cout << "Lambda charge = " << Charge << endl;
             //DCAGlobal = p_all[trk].DCAGlobal();
             Phi   = gv_gamma::trk_mom->Phi();
             Theta     = 2.*atan(exp(-Eta));
@@ -423,7 +423,7 @@ void Gamma_112_module(int cen = 1, int opt_weight = 1, const Char_t *inFile = ".
             for(int trkj = 0; trkj < n_particle2; trkj++)
             {
                 Charge2 = particle2->at(trkj).Charge; //1 for protons, -1 for antiprotons
-                cout << "Proton charge = " << Charge2 << endl;
+                // cout << "Proton charge = " << Charge2 << endl;
                 gv_gamma::trk_mom2->SetXYZ(particle2->at(trkj).px, particle2->at(trkj).py, particle2->at(trkj).pz);
                 Eta2   = gv_gamma::trk_mom2->Eta();
                 Pt2    = gv_gamma::trk_mom2->Pt();
@@ -459,7 +459,7 @@ void Gamma_112_module(int cen = 1, int opt_weight = 1, const Char_t *inFile = ".
                 {
                     if(p_all->at(ind2).trk_id == particle2->at(trkj).trk_id)
                     {
-                        cout << "Hit an EP proton!" << endl;
+                        // cout << "Hit an EP proton!" << endl;
                         if(IsGoodAsso(Pt2, Eta2, DCAGlobal2))
                         {
                             mQx_j -= Pt2 * cos(Phi_pnew[ind2] * nHar);
@@ -516,22 +516,24 @@ void Gamma_112_module(int cen = 1, int opt_weight = 1, const Char_t *inFile = ".
                 correlator0 = cos(Phi_new[trki] - 3 * Phi_pnew[trkj] + 2 * psi_F2_new) * 100;
                 n_gamma++;
 
-                cout << "Gamma112 = (correlator4) " << correlator4 << endl;
-                cout << "Gamma112 = (correlator4e) " << correlator4e << endl;
-                cout << "Gamma112 = (correlator4w) " << correlator4w << endl;
+                // cout << "Gamma112 = (correlator4) " << correlator4 << endl;
+                // cout << "Gamma112 = (correlator4e) " << correlator4e << endl;
+                // cout << "Gamma112 = (correlator4w) " << correlator4w << endl;
 
                 if(Charge > 0 && Charge2 > 0) FillGamma(1);
                 if(Charge < 0 && Charge2 < 0) FillGamma(2);
                 if(Charge * Charge2 > 0)
                 {
                     FillGamma(3);
-                    cout << "filled 3, same sign" << endl;
+                    // cout << "filled 3, same sign" << endl;
                 }
                 if(Charge * Charge2 < 0)
                 {
                     FillGamma(4);
-                    cout << "filled 4, opposite sign" << endl;
+                    // cout << "filled 4, opposite sign" << endl;
                 }
+
+                // cout << "Here?" << endl;
 
                 if(fabs(Pt - Pt2) > 0.15 && fabs(Eta - Eta2) > 0.15)
                 {
@@ -552,6 +554,8 @@ void Gamma_112_module(int cen = 1, int opt_weight = 1, const Char_t *inFile = ".
                         }
                     }
                 }
+
+                // cout << "Finished the loop" << endl;
             } // 2nd track
 
         }  //1st Track
@@ -561,7 +565,7 @@ void Gamma_112_module(int cen = 1, int opt_weight = 1, const Char_t *inFile = ".
             for(int trkj = 0; trkj < n_particle2; trkj++)
             {
                 Charge2 = particle2->at(trkj).Charge; //1 for protons, -1 for antiprotons
-                cout << "Proton charge = " << Charge2 << endl;
+                // cout << "Proton charge = " << Charge2 << endl;
                 gv_gamma::trk_mom2->SetXYZ(particle2->at(trkj).px, particle2->at(trkj).py, particle2->at(trkj).pz);
                 Eta2   = gv_gamma::trk_mom2->Eta();
                 Pt2    = gv_gamma::trk_mom2->Pt();
@@ -589,13 +593,13 @@ void Gamma_112_module(int cen = 1, int opt_weight = 1, const Char_t *inFile = ".
                 {
                     if(p_all->at(ind2).trk_id == particle2->at(trkj).trk_id)
                     {
-                        cout << "Hit an EP proton!" << endl;
+                        // cout << "Hit an EP proton! 2" << endl;
                         if(IsGoodAsso(Pt2, Eta2, DCAGlobal2))
                         {
-                            // mQx_j -= Pt2 * cos(Phi_pnew[ind2] * nHar);
-                            // mQy_j -= Pt2 * sin(Phi_pnew[ind2] * nHar);
-                            mQx_j -= Pt2 * cos(Phi_pnew[trkj] * nHar);
-                            mQy_j -= Pt2 * sin(Phi_pnew[trkj] * nHar);
+                            mQx_j -= Pt2 * cos(Phi_pnew[ind2] * nHar);
+                            mQy_j -= Pt2 * sin(Phi_pnew[ind2] * nHar);
+                            // mQx_j -= Pt2 * cos(Phi_pnew[trkj] * nHar);
+                            // mQy_j -= Pt2 * sin(Phi_pnew[trkj] * nHar);
                         }
                     }
                 }
@@ -1611,13 +1615,13 @@ void FillGamma(int ord)
     }
     pParity_int_obs1->Fill(ord, correlator0);
     pParity_int_obs3->Fill(ord, correlator0, Eweight / eff / eff2);
-    pParity_int_obs3_splitpt[(int)floor((Pt-0.5)/0.1)]->Fill(ord, correlator0, Eweight / eff / eff2);
+    // pParity_int_obs3_splitpt[(int)floor((Pt-0.5)/0.1)]->Fill(ord, correlator0, Eweight / eff / eff2);
     pParity_int_ss_obs1->Fill(ord, correlator4);
     pParity_int_ss_obs3->Fill(ord, correlator4, Eweight / eff / eff2);
-    pParity_int_ss_obs3_splitpt[(int)floor((Pt-0.5)/0.1)]->Fill(ord, correlator4, Eweight / eff / eff2);
+    // pParity_int_ss_obs3_splitpt[(int)floor((Pt-0.5)/0.1)]->Fill(ord, correlator4, Eweight / eff / eff2);
     pDelta_int_ss_obs1->Fill(ord, correlator3);
     pDelta_int_ss_obs3->Fill(ord, correlator3, Eweight / eff / eff2);
-    pDelta_int_ss_obs3_splitpt[(int)floor((Pt-0.5)/0.1)]->Fill(ord, correlator3, Eweight / eff / eff2);
+    // pDelta_int_ss_obs3_splitpt[(int)floor((Pt-0.5)/0.1)]->Fill(ord, correlator3, Eweight / eff / eff2);
     pParity_eta_ss_obs1->Fill(ord, 0.5 * (Eta + Eta2), correlator4);
     pParity_eta_ss_obs3->Fill(ord, 0.5 * (Eta + Eta2), correlator4, Eweight / eff / eff2);
     pParity_Deta_ss_obs1->Fill(ord, fabs(Eta - Eta2), correlator4);

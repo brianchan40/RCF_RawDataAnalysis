@@ -1,0 +1,57 @@
+### R-BY-R QA PACKAGE DEVELOPED BY FUDAN-BNL GROUP FOR ISOBAR DATA ANALYSIS
+### ANY QUESTIONS ON THIS CODE ARE WELCOME TO ASK Y. HU, P. TRIBEDY, S. CHOUDHURY, FEB 12, 2020 
+### LAST EDIT ON MAR 30, 2020
+
+TO RUN THIS CODE, YOU NEED THE FOLLOWING FILES: 
+   runbyrun_advanced.sh
+   jumpcheck.sh
+   readoutroot.C
+   badrunfinder.sh
+   readoutdata.C
+   readoutnrms.C
+   qa.list	
+   *runbyrun.sh		#Out of use, but you still could use this one if you only want to check one quantity 
+
+
+TO RUN THIS CODE, YOU NEED TO GIVE THE ROOT FILE AND TPROFILE NAME
+   bash runbyrun_advanced.sh [FILENAME] [NAMELIST]
+ e.g:  bash runbyrun_advanced.sh 27gev_qahist.root qa.list
+ *The qa.list in this package is the example for [NAMELIST] 
+
+
+BY DEFAULT THIS CODE WILL HELP YOU CHECK HOW MANY TIMES OF WEIGHTED-ERROR TO DETERMINED JUMPS.
+(5 TIMES AND 1% DIFFERENT AT LEAST)
+(YOU CAN ALSO SET A FIXED NUMBER FOR HOW MANY TIMES WEIGHTED-ERROR BY HAND)
+
+THIS CODE WILL AUTO DO THE FOLLOING STEPS: 
+     STEP-1: Precheck the jumps without any cut
+     STEP-2: 1st round BADRUNS check with 10-RMS
+     STEP-3: Remove the 1st round BADRUNS and check the jumps
+     STEP-4: Recheck every region in STEP-3 to avoid missing jumps
+     STEP-5: Strict BADRUNS check with 5-RMS limit
+  After find the jumps, it will check the next quantity:
+     STEP-6: For every region given in the last step, check with the next quantity
+     STEP-7: Repeat STEP-7 until finish the qa.list
+      
+
+THIS CODE WILL HAVE THE FOLLOWING OUTPUT FILES:
+     Final_region_${HISTNAME}.list			#SAVE THE JUMPS 
+     badrunlist_${HISTNAME}_10SIGMA.list		#SAVE THE 1ST ROUND BADRUNS
+     badrunlist_${HISTNAME}_5SIGMA.list			#SAVE THE 2ND ROUND BADRUNS
+
+     Final_badruns.list					#THE FINAL BADRUNS FOR ALL QUANTITIES 
+     Final_regions.list					#THE FINAL REGIONS FOR ALL QUANTITIES 
+
+THIS CODE ALSO HAVE AN ADVANCED MODE, YOU CAN CHOOSE:
+    1.[NSIGMA_JUMP]
+	 HOW MANY WEIGHTED-ERROR TO DETERMINED JUMPS  
+    2.[NSIGMA_BADRUNS_0]
+	 HOW MANY RMS TO REJECT THE 1ST ROUND BADRUNS (DEFAULT IS 10)  
+    3.[NSIGMA_BADRUNS_1]
+	 HOW MANY RMS TO REJECT THE 2ND ROUND BADRUNS (DEFAULT IS 5)
+    
+    TO RUN IT IN THIS MODE, YOU NEED TO GIVE 3 MORE PARAMETERS 
+       bash runbyrun_advanced.sh [FILENAME] [NAMELIST] [NSIGMA_JUMP] [NSIGMA_BADRUNS_0] [NSIGMA_BADRUNS_1]
+        e.g:  bash runbyrun_advanced.sh 27gev_qahist.root  qa.list 5 10 5
+	
+ 

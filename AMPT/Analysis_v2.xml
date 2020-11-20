@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<job  maxFilesPerProcess="100" simulateSubmission="false" fileListSyntax="xrootd">
+    
+    <command>
+        starver SL19b
+	./run_v2.csh &cent; &opt_weight; $FILELIST $JOBID
+        
+    </command>
+    
+    <SandBox installer="ZIP">
+        <Package name="pla_&cent;_&lam;_&lum;">
+            <File>file:/star/u/brian40/PicoDst/PicoDst_NoMaker/AMPT/run_v2.csh</File>
+            <File>file:/star/u/brian40/PicoDst/PicoDst_NoMaker/AMPT/namespaces/</File>
+            <File>file:/star/u/brian40/PicoDst/PicoDst_NoMaker/AMPT/Runv2Analyzer.C</File>
+            <File>file:/star/u/brian40/PicoDst/PicoDst_NoMaker/AMPT/v2_module.C</File>
+            <File>file:/star/u/brian40/PicoDst/PicoDst_NoMaker/AMPT/v2_module.h</File>
+            <File>file:/star/u/brian40/PicoDst/PicoDst_NoMaker/Version2/StRoot/</File>
+            <File>file:/star/u/brian40/PicoDst/PicoDst_NoMaker/Version2/structs.h</File>
+        </Package>
+    </SandBox>
+    
+    
+    <Generator>
+        <Location>./condor_files/</Location>
+    </Generator>
+    
+    <!--<input URL="file:/gpfs01/star/pwg/dneff/data/AMPT/ampt_brian/output/27GeV/*.root"/>-->
+    <!--<input URL="file:/gpfs01/star/pwg/dneff/data/AMPT/Brian_Data/min_bias/27GeV/*.root"/>-->
+    <input URL="file:/star/data01/pwg/rexwg/AMPT_new/data/AuAu200GeV_data*/*.root"/>
+    <output fromScratch="*.root" toURL="file:/star/u/brian40/PicoDst/PicoDst_NoMaker/AMPT/output/&lam;_&lum;/Gamma112_&cent;/" />
+    
+    <stdout URL="file:/star/u/brian40/PicoDst/PicoDst_NoMaker/AMPT/output/&lam;_&lum;/Gamma112_&cent;_debug/$JOBID.out"/>
+    <stderr URL="file:/star/u/brian40/PicoDst/PicoDst_NoMaker/AMPT/output/&lam;_&lum;/Gamma112_&cent;_debug/$JOBID.err"/>
+</job>
